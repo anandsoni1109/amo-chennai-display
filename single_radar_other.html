@@ -23,13 +23,13 @@
         function updateImage() {
             const now = new Date().getTime();
             const radar2Image = document.getElementById('radar2-image');
-            radar2Image.src = `https://internal.imd.gov.in/section/dwr/img/caz_cni.gif?${now}`;
+            radar2Image.src = `https://internal.imd.gov.in/section/dwrIndiaMet/img/caz_cni.gif?${now}`;
         }
 
         setInterval(updateImage, 60000); // Update every 60 seconds
     </script>
 </head>
 <body onload="updateImage()">
-    <img id="radar2-image" src="https://internal.imd.gov.in/section/dwr/img/caz_cni.gif" alt="Radar-2 Image">
+    <img id="radar2-image" src="https://internal.imd.gov.in/section/dwrIndiaMet/img/caz_cni.gif" alt="Radar-2 Image">
 </body>
 </html>
